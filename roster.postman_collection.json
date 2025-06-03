@@ -1,0 +1,577 @@
+{
+	"info": {
+		"_postman_id": "7715b7d5-1953-4a2a-b0fa-fcc398feb386",
+		"name": "roster",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1 ingest",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-API-KEY",
+						"value": "84fd26e0d225a9d6ce66d6bc668617faee8a9cee1b9f83182d39db1cc124c32e",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "url",
+							"value": "https://sonuchoudhary.my.canva.site/portfolio",
+							"type": "default"
+						},
+						{
+							"key": "username",
+							"value": "sonuchoudhary",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/ingest",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"ingest"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "1 ingest",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-API-KEY",
+								"value": "84fd26e0d225a9d6ce66d6bc668617faee8a9cee1b9f83182d39db1cc124c32e",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "url",
+									"value": "https://sonuchoudhary.my.canva.site/portfolio",
+									"type": "default"
+								},
+								{
+									"key": "username",
+									"value": "sonuchoudhary",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/ingest",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"ingest"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 03 Jun 2025 03:36:49 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 03 Jun 2025 03:36:49 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.4"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Profile ingested\",\n    \"username\": \"sonuchoudhary\"\n}"
+				}
+			]
+		},
+		{
+			"name": "2 show",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-API-KEY",
+						"value": "84fd26e0d225a9d6ce66d6bc668617faee8a9cee1b9f83182d39db1cc124c32e",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/profile/sonuchoudhary",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"profile",
+						"sonuchoudhary"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "2 show",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-API-KEY",
+								"value": "84fd26e0d225a9d6ce66d6bc668617faee8a9cee1b9f83182d39db1cc124c32e",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/profile/sonuchoudhary",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"profile",
+								"sonuchoudhary"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 03 Jun 2025 03:37:46 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 03 Jun 2025 03:37:46 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.4"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"username\": \"sonuchoudhary\",\n    \"basic_info\": {\n        \"name\": \"Sonu Choudhary \",\n        \"email\": \"jabsvideo19@gmail.com\",\n        \"phone\": \"+917563910757\"\n    },\n    \"clients\": [\n        {\n            \"id\": 14,\n            \"name\": \"Uptin Saiidi\"\n        },\n        {\n            \"id\": 15,\n            \"name\": \"Dr Maryam\"\n        },\n        {\n            \"id\": 16,\n            \"name\": \"Ali Taghikhani\"\n        },\n        {\n            \"id\": 17,\n            \"name\": \"Clients Testimonial\"\n        },\n        {\n            \"id\": 18,\n            \"name\": \"Lior Roisman\"\n        },\n        {\n            \"id\": 19,\n            \"name\": \"Ali Taghikhani\"\n        },\n        {\n            \"id\": 20,\n            \"name\": \"Dr Maryam\"\n        },\n        {\n            \"id\": 21,\n            \"name\": \"Content Creator\"\n        },\n        {\n            \"id\": 22,\n            \"name\": \"Market Men\"\n        },\n        {\n            \"id\": 23,\n            \"name\": \"Rohit Thomas\"\n        },\n        {\n            \"id\": 24,\n            \"name\": \"Stand Out\"\n        },\n        {\n            \"id\": 25,\n            \"name\": \"Get Noticed\"\n        },\n        {\n            \"id\": 26,\n            \"name\": \"Open Sans\"\n        }\n    ],\n    \"videos\": [\n        {\n            \"id\": 9,\n            \"title\": \"YouTube Video\",\n            \"url\": \"https://youtu.be/B6yRSDWiou4\"\n        },\n        {\n            \"id\": 10,\n            \"title\": \"YouTube Video\",\n            \"url\": \"https://youtu.be/2GP-WuXphTk\"\n        },\n        {\n            \"id\": 11,\n            \"title\": \"YouTube Video\",\n            \"url\": \"https://youtu.be/dXE_emchp5k\"\n        },\n        {\n            \"id\": 12,\n            \"title\": \"YouTube Video\",\n            \"url\": \"https://youtu.be/rSppFMxWsX4\"\n        },\n        {\n            \"id\": 13,\n            \"title\": \"YouTube Video\",\n            \"url\": \"https://youtu.be/rSppFMxWsX4\"\n        },\n        {\n            \"id\": 14,\n            \"title\": \"YouTube Video\",\n            \"url\": \"https://youtu.be/2GP-WuXphTk\"\n        },\n        {\n            \"id\": 15,\n            \"title\": \"YouTube Video\",\n            \"url\": \"https://youtu.be/B6yRSDWiou4\"\n        },\n        {\n            \"id\": 16,\n            \"title\": \"YouTube Video\",\n            \"url\": \"https://youtu.be/dXE_emchp5k\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "3 update",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-API-KEY",
+						"value": "84fd26e0d225a9d6ce66d6bc668617faee8a9cee1b9f83182d39db1cc124c32e",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "sonuchoudhary123",
+							"type": "default"
+						},
+						{
+							"key": "email",
+							"value": "jabsvideo19123@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "phone",
+							"value": "+917563910123",
+							"type": "default"
+						},
+						{
+							"key": "clients[0][id]",
+							"value": "1",
+							"type": "default"
+						},
+						{
+							"key": "clients[0][name]",
+							"value": "Uptin Saiidi 2 new",
+							"type": "default"
+						},
+						{
+							"key": "videos[0][id]",
+							"value": "1",
+							"type": "default"
+						},
+						{
+							"key": "videos[0][title]",
+							"value": "YouTube Video 222 new",
+							"type": "default"
+						},
+						{
+							"key": "videos[0][url]",
+							"value": "https://youtu.be/B6yRSDWiou222new",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/profile/sonuchoudhary",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"profile",
+						"sonuchoudhary"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "3 update",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-API-KEY",
+								"value": "84fd26e0d225a9d6ce66d6bc668617faee8a9cee1b9f83182d39db1cc124c32e",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "sonuchoudhary123",
+									"type": "default"
+								},
+								{
+									"key": "email",
+									"value": "jabsvideo19123@gmail.com",
+									"type": "default"
+								},
+								{
+									"key": "phone",
+									"value": "+917563910123",
+									"type": "default"
+								},
+								{
+									"key": "clients[0][id]",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "clients[0][name]",
+									"value": "Uptin Saiidi 2 new",
+									"type": "default"
+								},
+								{
+									"key": "videos[0][id]",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "videos[0][title]",
+									"value": "YouTube Video 222 new",
+									"type": "default"
+								},
+								{
+									"key": "videos[0][url]",
+									"value": "https://youtu.be/B6yRSDWiou222new",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/profile/sonuchoudhary",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"profile",
+								"sonuchoudhary"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 03 Jun 2025 03:38:23 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 03 Jun 2025 03:38:23 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.4"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Profile updated\"\n}"
+				}
+			]
+		},
+		{
+			"name": "4 destroy",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "X-API-KEY",
+						"value": "84fd26e0d225a9d6ce66d6bc668617faee8a9cee1b9f83182d39db1cc124c32e",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/profile/sonuchoudhary",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"profile",
+						"sonuchoudhary"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "4 destroy",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-API-KEY",
+								"value": "84fd26e0d225a9d6ce66d6bc668617faee8a9cee1b9f83182d39db1cc124c32e",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/profile/sonuchoudhary",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"profile",
+								"sonuchoudhary"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 03 Jun 2025 03:39:01 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 03 Jun 2025 03:39:01 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.4"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Profile deleted\"\n}"
+				}
+			]
+		}
+	]
+}
